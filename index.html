@@ -3,45 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Tech Blogs - Coding Simple</title>
+    <title>Daily Tech Blogs - Coding Simple & Professional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav class="container">
-            <h1>&lt;DailyTechBlog /&gt;</h1>
-            <ul>
-                <li><a href="#home">Home</a></li>
+            <a href="/" class="logo">&lt;SimpleCodeDaily /&gt;</a>
+            <ul class="nav-links">
                 <li><a href="#archive">Archive</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#tags">Tags</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="cta-button">Subscribe</button></li>
             </ul>
         </nav>
     </header>
 
-    <main class="container">
-        <article class="post">
-            <h2>Minimalist GitHub Pages Setup</h2>
-            <p class="meta">Published on October 25, 2025 | Tag: Web Development</p>
-            <p>
-                Setting up a blog on GitHub Pages is incredibly simple. You just need a repository, an `index.html` file, and a little bit of CSS magic for the dark theme!
-            </p>
-            <a href="#" class="read-more">Read More...</a>
-        </article>
+    <main>
+        <section id="hero" class="container">
+            <h1>Master Tech, One Simple Line at a Time.</h1>
+            <p>Your daily dose of easy, simple, and minimalist coding tutorials and tech insights.</p>
+        </section>
 
-        <article class="post">
-            <h2>The Power of Simple CSS Variables</h2>
-            <p class="meta">Published on October 24, 2025 | Tag: CSS, Beginner</p>
-            <p>
-                CSS variables (or custom properties) make maintaining a dark theme so much easier. We're using them right here to define our background and text colors once.
-            </p>
-            <a href="#" class="read-more">Read More...</a>
-        </article>
+        <section id="latest-posts" class="container">
+            <h2>Latest Posts</h2>
+            
+            <article class="post featured">
+                <div class="post-content">
+                    <p class="meta">Featured | Oct 25, 2025</p>
+                    <h3>The Power of CSS Grid for Minimalist Layouts</h3>
+                    <p>Ditch the complicated frameworks and embrace the simplicity of **CSS Grid** for creating clean, professional website layouts in minutes. We break down the essentials...</p>
+                    <div class="tags"><span>#CSS</span> <span>#Grid</span> <span>#WebDev</span></div>
+                    <a href="#" class="read-more">Read Full Guide &rarr;</a>
+                </div>
+            </article>
 
-        </main>
+            <article class="post">
+                <p class="meta">Oct 24, 2025 | 5 min read</p>
+                <h3>Hosting Your Simple App on GitHub Pages</h3>
+                <p>A quick, easy tutorial on deploying single-page applications and static sites using nothing but a GitHub repository.</p>
+                <div class="tags"><span>#GitHub</span> <span>#Deployment</span></div>
+                <a href="#" class="read-more">Read More &rarr;</a>
+            </article>
+
+            <article class="post">
+                <p class="meta">Oct 23, 2025 | 3 min read</p>
+                <h3>Why Developers Love Dark Themes (and How to Implement One)</h3>
+                <p>Beyond aesthetics, a dark theme reduces eye strain. Learn the core CSS variables needed for a successful toggle feature.</p>
+                <div class="tags"><span>#Design</span> <span>#CSS</span> <span>#Minimalist</span></div>
+                <a href="#" class="read-more">Read More &rarr;</a>
+            </article>
+            
+            <a href="#archive" class="all-posts-link">View All Archive Posts &rarr;</a>
+        </section>
+        
+        <aside class="container sidebar-layout">
+            <div id="tags">
+                <h3>Popular Tags</h3>
+                <div class="tag-list">
+                    <a href="#">#HTML</a>
+                    <a href="#">#CSS</a>
+                    <a href="#">#JavaScript</a>
+                    <a href="#">#GitHub</a>
+                    <a href="#">#Design</a>
+                    <a href="#">#Tutorial</a>
+                </div>
+            </div>
+
+            <div id="contact">
+                <h3>Stay Updated</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your professional email" required>
+                    <button type="submit" class="cta-button">Join Newsletter</button>
+                </form>
+            </div>
+        </aside>
+
+    </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Daily Tech Blogs. Coding made easy and simple.</p>
+            <p>&copy; 2025 SimpleCodeDaily. All rights reserved.</p>
+            <p>Built with **simplicity** for **GitHub Pages**.</p>
         </div>
     </footer>
 </body>
